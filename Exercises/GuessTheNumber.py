@@ -1,13 +1,19 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[ ]:
+# In[1]:
+
+
+import streamlit as st
+your_name = st.text_input("Enter you name:")
+print ("Hello",your_name,"Welcome to Guess the number game!!!")
+
+
+# In[2]:
 
 
 # Guess the number
-
 import random
-print ("Welcome to Guess the number game!!!")
 
 SysNumber = random.randint(1,20)
 InpNumber = int(input("Guess the number between 1 to 20!!You have 5 chances! All the best:- "))
@@ -35,4 +41,10 @@ while (game == "START"):
     else:
         print ("Entered number is not between 0 and 20. Please enter the number again to begin the Game!")
         InpNumber = int(input("Enter the number again between 1 to 20:- "))
+
+
+# In[ ]:
+
+
+
 
